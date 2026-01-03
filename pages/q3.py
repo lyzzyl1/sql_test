@@ -88,11 +88,7 @@ st.markdown("""
 
 # 2. 图片
 st.subheader("🔬 生态系统能量金字塔示意图")
-st.image(
-    "pages/p3.PNG",
-    caption="图1：典型的生态系统能量金字塔，显示能量在营养级间的递减关系",
-    use_container_width=True
-)
+
 
 # 3. 用户回答的文本框
 st.subheader("📝 请在此输入您的分析回答")
@@ -133,4 +129,5 @@ with col_mid:
 with col_right:
     if st.button("下一题 ➡️", use_container_width=True):
         st.session_state.history = []
+
         st.switch_page("pages/q3.py")
